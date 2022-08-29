@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+body {
+  background: #151516;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+
+.heading span {
+    font-size: 3rem;
+    color: #5c0dab;
+    padding: .5rem 1.5rem;
+    border: 0.1rem solid #aaa;
+    border-radius: .5rem;
+  }
+
+   .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+  }
+
+  #menu-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: #000;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3rem;
+  }
+  
+  .header .logo span {
+    color: #5c0dab;
+  }
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+
+#menu-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* From uiverse.io by @abrahamcalsin */
+.plan-card {
+  background: #fff;
+  width: 15rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #000446;
+  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+
+.plan-card h2 {
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.plan-card h2 span {
+  display: block;
+  margin-top: -4px;
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.etiquet-price {
+  position: relative;
+  background: #fdbd4a;
+  width: 14.46rem;
+  margin-left: -0.65rem;
+  padding: .2rem 1.2rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.etiquet-price p {
+  margin: 0;
+  padding-top: .4rem;
+  display: flex;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.etiquet-price p:before {
+  content: "$";
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price p:after {
+  content: "/ handle";
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price div {
+  position: absolute;
+  bottom: -23px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #c58102;
+  border-bottom: 10px solid transparent;
+  border-right: 13px solid transparent;
+  z-index: -6;
+}
+
+.benefits-list {
+  margin-top: 16px;
+}
+
+.benefits-list ul {
+  padding: 0;
+  font-size: 14px;
+}
+
+.benefits-list ul li {
+  color: #4d4d4d;
+  list-style: none;
+  margin-bottom: .2rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.benefits-list ul li svg {
+  width: .9rem;
+  fill: currentColor;
+}
+
+.benefits-list ul li span {
+  font-weight: 300;
+}
+
+.button-get-plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.button-get-plan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000446;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: .8rem;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-get-plan a:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}
+
+.button-get-plan .svg-rocket {
+  margin-right: 10px;
+  width: .9rem;
+  fill: currentColor;
+}

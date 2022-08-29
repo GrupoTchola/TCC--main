@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #070721;
+    font-family: Arial;
+}
+
+.nav-bar{
+    min-height: 100%;
+    width: 100%;
+    background: #0B0C2B;
+    color: white;
+    position: relative;
+}
+
+a{
+	text-decoration:none;
+}
+
+li, a {
+    color:white;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+ li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type a{
+    color: white;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.type span{
+    color: rgba(26, 26, 26, 0.5)
+}
+
+.favorite{
+    color: #E7322F;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+}
+
+    .overlay{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92,95,236,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edit{
+        width: 160px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E7322F;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: Arial;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .editdetalhes{
+        width: 160px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E7322F;
+        margin-left: 5px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: Arial;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .editdetalhes:hover{
+        color: #FFFFFF;
+        background-color: #5A0404;
+        transition: all ease 0.3;
+    }
+
+    .edit:hover{
+        color: #FFFFFF;
+        background-color: #5A0403;
+        transition: all ease 0.3;
+    }
+
+    .overlay{
+        visibility: hidden;
+    }
+
+    .slide-img:hover .overlay{
+        visibility: visible;
+        animation: fade 0.5s;
+    }
+
+    @keyframes fade{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .carousel_slide{
+        background-color: #0B0C2B;
+        align-items: center;
+        display: flex;
+        margin-top:  80px;
+        margin-left:  360px;
+        max-width: 800px;
+    }
+
+  .Lista{
+      font-size: 50px;
+      color:white;
+      margin-left: 40px;
+  }
+
+  .legenda-lista{
+      margin-left: 50px;
+  }
+
+  .legenda-WishList{
+    margin-left: 50px;
+}
+
+.btn-form{
+    width:45px; 
+    height:45px; 
+    margin-bottom: 15px;
+    margin-left: 30px;
+}

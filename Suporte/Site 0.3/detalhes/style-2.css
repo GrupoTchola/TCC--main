@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0B0C2B;
+    font-family: Arial;
+}
+
+.navbar{
+    background-color: #070721;
+}
+
+.banner{
+        width: 400px;
+        height: 570px;
+        box-shadow: 2px 2px 30px rgba(0,0,0,.2);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 25px;
+}
+
+img, h1 {
+    float: left;
+}
+
+.anime-title{
+    margin-left: 20px;
+    font-family: arial;
+    font-size: 60px;
+    margin-top: 0px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.sinopse{
+    color: #848080;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.watch{
+    width: 160px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E7322F;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-family: Arial;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.detalhes{
+    display: inline-block;
+}
+
+.recomendacaoidade{
+    width: 100px;
+    height: 100px;
+}
+
+.nota .eps .classificacao{
+    margin-left: 100px;
+}
