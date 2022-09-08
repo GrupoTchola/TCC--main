@@ -1,4 +1,4 @@
-<?php
+ ?php
 require_once 'SQL-Connection/init.php';
 // abre a conexão
 $PDO = db_connect();
@@ -21,7 +21,7 @@ $total = $stmt_count->fetchColumn();
 // seleciona os registros
 $stmt = $PDO->prepare($sql);
 $stmt->execute();
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">

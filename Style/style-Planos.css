@@ -62,6 +62,77 @@ section {
     border-radius: .5rem;
   }
 
+
+
+
+
+
+
+
+
+  /* From uiverse.io by @adamgiebl */
+button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+   }
+   
+   button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid white;
+   }
+   
+   button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+   }
+   
+   button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #5c0dab;
+   }
+   
+   button:hover {
+    color: white;
+   }
+   
+   button:active span::before {
+    background: #5c0dab;
+   }
+
+
+
+
+
+
+
+
+
    .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -120,156 +191,319 @@ section {
     display: none;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* From uiverse.io by @abrahamcalsin */
-.plan-card {
-  background: #fff;
-  width: 15rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  border-bottom: 4px solid #000446;
-  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
-  font-family: "Poppins", sans-serif;
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
 }
 
-.plan-card h2 {
-  margin-bottom: 15px;
-  font-size: 27px;
-  font-weight: 600;
+.banner span {
+  font-size: 2rem;
+  color: #8c23f5;
 }
 
-.plan-card h2 span {
-  display: block;
-  margin-top: -4px;
-  color: #4d4d4d;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.etiquet-price {
-  position: relative;
-  background: #fdbd4a;
-  width: 14.46rem;
-  margin-left: -0.65rem;
-  padding: .2rem 1.2rem;
-  border-radius: 5px 0 0 5px;
-}
-
-.etiquet-price p {
-  margin: 0;
-  padding-top: .4rem;
-  display: flex;
-  font-size: 1.9rem;
-  font-weight: 500;
-}
-
-.etiquet-price p:before {
-  content: "$";
-  margin-right: 5px;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.etiquet-price p:after {
-  content: "/ handle";
-  margin-left: 5px;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.etiquet-price div {
-  position: absolute;
-  bottom: -23px;
-  right: 0px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid #c58102;
-  border-bottom: 10px solid transparent;
-  border-right: 13px solid transparent;
-  z-index: -6;
-}
-
-.benefits-list {
-  margin-top: 16px;
-}
-
-.benefits-list ul {
-  padding: 0;
-  font-size: 14px;
-}
-
-.benefits-list ul li {
-  color: #4d4d4d;
-  list-style: none;
-  margin-bottom: .2rem;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
-.benefits-list ul li svg {
-  width: .9rem;
-  fill: currentColor;
-}
-
-.benefits-list ul li span {
-  font-weight: 300;
-}
-
-.button-get-plan {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.2rem;
-}
-
-.button-get-plan a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000446;
+.banner h3 {
+  padding-top: 1rem;
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: .8rem;
-  letter-spacing: .05rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 3.5rem;
 }
 
-.button-get-plan a:hover {
-  transform: translateY(-3%);
-  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+.banner p {
+  margin: 1rem auto;
+  max-width: 60rem;
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
 }
 
-.button-get-plan .svg-rocket {
-  margin-right: 10px;
-  width: .9rem;
-  fill: currentColor;
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
 }
+
+.about .information {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
+}
+
+.about .information span {
+  font-size: 2rem;
+  color: #5c0dab;
+}
+
+.about .information h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.about .information p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.about .about-slider {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
+}
+
+.about .about-slider .slide {
+  background: linear-gradient(130deg, #111 93%, transparent 90%);
+  padding: 2rem 3rem;
+}
+
+.about .about-slider .slide p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+
+.about .about-slider .slide .icon-card img {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+}
+
+.title-card{
+    color:#fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about .about-slider .slide i {
+    font-size: 5rem;
+    margin-left: 21rem;
+    margin-right: 2rem;
+    color: #5c0dab;
+  }
+
+.footer{
+    background-color: #111;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.5rem;
+  display: block;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links:hover {
+  color: #5c0dab;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box span {
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+  }
+
+.footer .box-container .box p i {
+  padding-right: .5rem;
+  color: #5c0dab;
+}
+
+.footer .box-container .box span  {
+    padding-right: .5rem;
+    color: #5c0dab;
+  }
+
+.footer .box-container .box .share {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #111;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #5c0dab;
+}
+
+.footer .box-container .box form .email {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #111;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.pricing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.pricing .information span {
+  font-size: 2rem;
+  color: #5c0dab;
+}
+
+.discount{
+ color:red;
+ font-size: 1.5rem;
+}
+
+.pricing .information h3 {
+  font-size: 4rem;
+  padding-top: .5rem;
+  color: #fff;
+}
+
+.pricing .information p {
+  line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.pricing .information p i {
+  padding-right: 1rem;
+  color: #5c0dab;
+}
+
+.pricing .plan {
+  text-align: center;
+  padding: 2rem;
+}
+
+.pricing .plan.basic {
+  background: linear-gradient(130deg, #111 93%, transparent 90%);
+}
+
+.pricing .plan h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.pricing .plan .price {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #5c0dab;
+}
+
+.pricing .plan .price span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.pricing .plan .list {
+  padding: 1rem 0;
+}
+
+.pricing .plan .list p {
+  line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.pricing .plan .list p i {
+  padding-right: 1rem;
+  color: #5c0dab;
+}
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+      }
+      #menu-btn.fa-times {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+  .header {
+    padding: 2rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+  .features .box-container .box.second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
