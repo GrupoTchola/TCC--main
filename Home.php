@@ -1,4 +1,4 @@
- ?php
+ <?php
 require_once 'SQL-Connection/init.php';
 // abre a conexão
 $PDO = db_connect();

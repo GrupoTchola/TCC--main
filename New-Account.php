@@ -1,4 +1,4 @@
-?php
+<?php
 require_once 'SQL-Connection/init.php';
 // abre a conexão
 $PDO = db_connect();
@@ -46,6 +46,7 @@ $stmt->execute();
             <a href="Planos.php">Planos</a>
             <a href="Sobre.php">Sobre</a>
             <a href="Contato.php">Contato</a>
+
         </nav>
 
     </header>
@@ -61,16 +62,27 @@ $stmt->execute();
 
 
 
-
+<form method="POST" action="SQL-Connection/add.php">
     <div class="right-login"><div class="form-box">
-    <form method="POST" action="SQL-Connection/add.php">
-        <h1>Faça o Login</h1>
+        <h1>Crie Nova Conta</h1>
+
+
+<div class="info1">
+            <div class="input-box3">
+               <input type="text" placeholder="Nome"> 
+            </div>
+            <div class="input-box3">
+                   <input type="text" placeholder="Sobrenome"> 
+                </div>
+</div>
+
         <div class="input-box">
-        <i class="fa-solid fa-at"></i>
-           <input type="email" placeholder="E-mail Id"> 
+           <input type="email" placeholder="E-mail"> 
         </div>
+
+
+
         <div class="input-box2">
-            <i class="fa-solid fa-lock"></i>
             <input type="password" placeholder="Senha" id="passId"> 
         <span class="eye" onclick="eyefunction()">
             <i id="hide1" class="fa-solid fa-eye"></i>
@@ -78,43 +90,24 @@ $stmt->execute();
         </span>
         </div>
 
-        <div class="forgot-password">
-            <a href="#" class="make-new-password">Esqueci minha senha</a>
-        </div>
-
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!--
-
-        <div class="info-errada">
-            <a href="#" class="errado">E-mail ou senha errada!</a>
-        </div>
--->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------->
+        <div class="info2">
+            <div class="input-box4">
+               <input type="text" placeholder="Telefone"> 
+            </div>
+            <div class="input-box4">
+                   <input type="date" placeholder="Data de nascimento"> 
+                </div>
+</div>
 
         <div class="btns">
-        <button type="button" class="login-btn">LOGIN</button>
-    </div>
-
-
-    <div class="new-account">
-        <a href="New-Account.php" class="make-new-account">Se não tiver uma conta <span>Faça seu Cadastro</span> </a>
+            <a href="Login-Screen.php">
+        <button type="button" class="login-btn">CADASTRAR</button>
+</a>
     </div>
 
 </form>
- 
 
+ 
     <script>
         function eyefunction(){
             var x= document.getElementById("passId");

@@ -1,3 +1,30 @@
+<?php
+require_once 'SQL-Connection/init.php';
+// abre a conexão
+$PDO = db_connect();
+
+// SQL para contar o total de registros
+// A biblioteca PDO possui o método rowCount(), 
+// mas ele pode ser impreciso.
+// É recomendável usar a função COUNT da SQL
+$sql_count = "SELECT COUNT(*) AS total FROM users ORDER BY name ASC";
+
+// SQL para selecionar os registros
+$sql = "SELECT email, senha "
+        . "FROM users ORDER BY email ASC";
+
+// conta o total de registros
+$stmt_count = $PDO->prepare($sql_count);
+$stmt_count->execute();
+$total = $stmt_count->fetchColumn();
+
+// seleciona os registros
+$stmt = $PDO->prepare($sql);
+$stmt->execute();
+?> 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
