@@ -412,10 +412,24 @@ h1{
     font-size: 3rem;
   }
 
+  .left-login{
+    display: none; 
+  }
+
+  .form-box{
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10% auto;
+  }
+
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .left-login{
+    display: none; 
   }
 }

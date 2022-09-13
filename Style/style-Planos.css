@@ -463,6 +463,7 @@ button {
   section {
     padding: 3rem 2rem;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -499,6 +500,10 @@ button {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+  .sla {
+    min-height: 8.5vh;
+  }
+
 }
 
 @media (max-width: 450px) {

@@ -28,7 +28,7 @@
 
     </header>
 
-
+<div class="sla"></div>
 <section class="banner">
 
 <span>Junte-se a nós</span>
@@ -36,11 +36,12 @@
 <p>Consiga 30% de desconto nos seus primeiros 6 meses de treino, após os 6 meses estará sujeito a pagamento</p>
 <a href="Planos.php" class="btn">
 <button> Saiba mais
-  <span></span>
+  <span></s.pan>
 </button>
 </a>
 
 </section>
+</div>
 
 
 

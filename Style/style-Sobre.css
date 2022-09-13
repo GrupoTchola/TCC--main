@@ -484,6 +484,10 @@ button {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+  .sla{
+    min-height: 8.5vh;
+  }
+
 }
 
 @media (max-width: 450px) {

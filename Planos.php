@@ -25,6 +25,7 @@
         </nav>
     </header>
 
+    <div class="sla"></div>
     <section class="banner">
 
         <span>Junte-se a nós</span>
@@ -35,7 +36,10 @@
           <span></span>
         </button>
         </a>
+  
     </section>
+</div>
+
 
     
 <section class="pricing" id="pricing">

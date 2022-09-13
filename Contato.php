@@ -53,14 +53,15 @@ $stmt->execute();
 
     </header>
 
-    <div class="right-login"><div class="form-box">
+    <div class="sla"></div>
+    <div class="right-login"><div class="form-box"> 
       <form method="POST" action="SQL-Connection/add.php">
           <h1>Contato</h1>
           <div class="input-box">
              <input type="email" placeholder="E-mail Id"> 
           </div>
 
-          <div class="">
+          <div class="testee">
             <textarea id="subject" name="subject" placeholder="Escreva o motivo de você estar entrando em contato conosco..." style="height:200px"></textarea>
          </div>
           
@@ -70,6 +71,7 @@ $stmt->execute();
       </div>
       </form>
     </div>
+</div>
 </div>
 
 
