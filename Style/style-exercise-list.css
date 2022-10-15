@@ -1,0 +1,180 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    box-sizing: border-box;
+  }
+
+  div{
+    display: block;
+  }
+
+  .link-do-card{
+        display: block;
+        padding: 0 0.3rem 0 0;
+        margin-bottom: 0.3rem;
+        text-decoration: none;
+        width: 100%;
+  }
+
+  a{
+    background-color: transparent;
+  }
+
+  .a{
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-card-outline);
+    border-radius: 6px;
+    color: var(--color-content-text);
+    padding: 0.75rem 1rem;
+}
+  
+.grid{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: min-content 2fr max-content;
+    grid-template-columns: min-content 2fr max-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: min-content;
+    line-height: var(--app-font-base-line-height,1.25rem);
+}
+
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: #151516;
+  }
+  
+  section {
+    padding: 5rem 4%;
+  }
+  
+  .heading {
+    margin-bottom: 3rem;
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  .header .navbar a {
+      display: inline-block;
+      padding: 1.5rem 2rem;
+      font-size: 1.7rem;
+      color: #fff;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 9%;
+        z-index: 10000;
+        background: #000;
+      }
+
+      .header .logo {
+        font-weight: bolder;
+        color: #fff;
+        font-size: 3rem;
+      }
+      
+      .header .logo span {
+        color: #5c0dab;
+      }
+    
+    .header .navbar a {
+      display: inline-block;
+      padding: 1.5rem 2rem;
+      font-size: 1.7rem;
+      color: #fff;
+    }
+
+
+
+
+    @media (max-width: 991px) {
+        html {
+          font-size: 55%;
+          scroll-padding: 7rem;
+        }
+        .header {
+          padding: 0 2rem;
+        }
+        section {
+          padding: 3rem 2rem;
+        }
+      }
+      
+      @media (max-width: 768px) {
+          #menu-btn {
+              display: inline-block;
+            }
+            #menu-btn.fa-times {
+              -webkit-transform: rotate(180deg);
+                      transform: rotate(180deg);
+            }
+        .header {
+          padding: 2rem;
+        }
+        .header .navbar {
+          position: absolute;
+          top: 99%;
+          left: 0;
+          right: 0;
+          background: #000;
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        .header .navbar.active {
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        .header .navbar a {
+          display: block;
+          font-size: 2rem;
+        }
+        .features .box-container .box.second {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: column;
+                  flex-flow: column;
+        }
+        .sla{
+          min-height: 8.5vh;
+        }
+      
+        .banner{
+          margin: 20px;
+        }
+      
+      }
+      
+      @media (max-width: 450px) {
+        html {
+          font-size: 50%;
+        }
+      }

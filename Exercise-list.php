@@ -32,18 +32,25 @@
 
 
 <div div pra um card só>
-    <a href="" link do card>
+    <a href="" class="link-do-card">
 
 
         <div nao entendi o pq>
+            <div class="a">
+                <div class="grid">
             <div div no conteudo do card>
 
 
-                <div div titulo></div div titulo>
-                <div div subtitulo></div div subtitulo>
+                <div div titulo><span>Peito</span></div div titulo>
+                <div div subtitulo>
+                    <span>Repeticao: 5</span>
+                    <span>Descanso: 1min</span>
+                </div div subtitulo>
 
 
             </div div no conteudo do card>
+        </div grid>
+        </div a>
         </div nao entendi o pq>
 
 
