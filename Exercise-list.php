@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Style/style-exercise-list.css">
 
+
 </head>
 <body>
     <header class="header">
@@ -31,14 +32,13 @@
 
 
     <header>
-        <h1>Toggle Crad List - Grid</h1>
+        <h1>Toggle Crad List - Grid Exercises</h1>
     </header>
 
 
     <div class="toggle-btns">
 
         <i class="fas fa-list active"></i>
-        <i class="fas fa-th-large"></i>
 
     </div>
 
@@ -46,12 +46,11 @@
 
     <div class="project-container list">
 
-        <div class="project">
+        <div class="project" tabindex="1">
 
             <div class="top-menu">
 
-                <i class="fas fa-ellipsis-h"></i>
-                <i class="far fa-star"></i>
+
 
             </div>
 
@@ -107,12 +106,11 @@
         </div>
 
         
-        <div class="project">
+        <div class="project" tabindex="2">
 
             <div class="top-menu">
 
-                <i class="fas fa-ellipsis-h"></i>
-                <i class="far fa-star"></i>
+    
 
             </div>
 
@@ -168,12 +166,11 @@
         </div>
 
         
-        <div class="project">
+        <div class="project" tabindex="3">
 
             <div class="top-menu">
 
-                <i class="fas fa-ellipsis-h"></i>
-                <i class="far fa-star"></i>
+    
 
             </div>
 
@@ -230,12 +227,11 @@
         </div>
 
         
-        <div class="project">
+        <div class="project" tabindex="4">
 
             <div class="top-menu">
 
-                <i class="fas fa-ellipsis-h"></i>
-                <i class="far fa-star"></i>
+    
 
             </div>
 
@@ -291,12 +287,11 @@
         </div>
 
         
-        <div class="project">
+        <div class="project" tabindex="5">
 
             <div class="top-menu">
 
-                <i class="fas fa-ellipsis-h"></i>
-                <i class="far fa-star"></i>
+    
 
             </div>
 

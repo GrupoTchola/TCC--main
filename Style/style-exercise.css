@@ -318,6 +318,11 @@ button {
     transform: rotate(-45deg);
   }
   
+.banner:hover{
+  transform: scale(1.005);
+  box-shadow: 0px 40px 40px rgba(0,0,0,0.2);
+}
+
   .button2:hover {
     background-color: var(--hover-color);
   }
