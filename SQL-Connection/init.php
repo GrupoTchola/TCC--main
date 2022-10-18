@@ -3,7 +3,7 @@
 // constantes com as credenciais de acesso ao banco MySQL
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'Gustavo100705');
+define('DB_PASS', '35178');
 define('DB_NAME', 'cadastroacademia');
 
 // habilita todas as exibições de erros
