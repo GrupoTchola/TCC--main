@@ -77,7 +77,7 @@ $stmt->execute();
 </div>
 
         <div class="input-box">
-           <input type="email" placeholder="E-mail"> 
+           <input type="text" placeholder="E-mail"> 
         </div>
 
 
@@ -92,7 +92,7 @@ $stmt->execute();
 
         <div class="info2">
             <div class="input-box4">
-               <input type="text" placeholder="Telefone"> 
+               <input type="text" placeholder="Celular"> 
             </div>
             <div class="input-box4">
                    <input type="date" placeholder="Data de nascimento"> 
@@ -100,7 +100,7 @@ $stmt->execute();
 </div>
 
 <div class="input-box">
-    <input type="email" placeholder="id"> 
+    <input type="email" placeholder="CPF"> 
  </div>
 
         <div class="btns">
