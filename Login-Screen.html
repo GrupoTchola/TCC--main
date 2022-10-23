@@ -31,7 +31,7 @@ $stmt->execute();
     <title>complete responsive fitness and gym website design</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="Style/style-New-Account.css">
+    <link rel="stylesheet" href="Style/style-Login.css">
 	<script src="https://kit.fontawesome.com/62b2e9a78b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -63,7 +63,7 @@ $stmt->execute();
 
 
     <div class="right-login"><div class="form-box">
-    <form method="POST" action="SQL-Connection/add.php">
+   <!-- <form method="POST" action="SQL-Connection/add.php">-->
         <h1>Faça o Login</h1>
         <div class="input-box">
         <i class="fa-solid fa-at"></i>
@@ -78,9 +78,9 @@ $stmt->execute();
         </span>
         </div>
 
-        <div class="forgot-password">
+        <!--<div class="forgot-password">
             <a href="#" class="make-new-password">Esqueci minha senha</a>
-        </div>
+        </div>-->
 
 <!---------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------->
@@ -103,13 +103,44 @@ $stmt->execute();
 <!---------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------->
 
-        <div class="btns">
-        <button type="button" class="login-btn">LOGIN</button>
+    <div class="btns">
+        <button type="submit" class="login-btn popup-button" onclick="handlePopup(true)">LOGIN</button>
+        <div class="container">
+            <div class="popup" id="popup">
+                <img src="images/warning.png" alt="warning">
+            
+                <h2 class="title">Warning!</h2>
+            
+                <p class="desc">Ocorreu um erro na execução do processo.</p>
+            
+                <button class="close-popup-button" onclick="handlePopup(false)">
+                    Fechar
+                </button>
+            </div>
+            </div>
     </div>
 
 
     <div class="new-account">
-        <a href="New-Account.php" class="make-new-account">Se não tiver uma conta <span>Faça seu Cadastro</span> </a>
+        <a class="make-new-account popup-button" onclick="handlePopup(true)">Se não tiver uma conta <span>Faça seu Cadastro</span> </a>
+
+        <div class="container">
+            <div class="popup" id="popup">
+                <img src="images/warning.png" alt="warning">
+            
+                <h2 class="title">Warning!</h2>
+            
+                <p class="desc">Ocorreu um erro na execução do processo.</p>
+            
+                <button class="close-popup-button" onclick="handlePopup(false)">
+                    Fechar
+                </button>
+            </div>
+            </div>
+    </div>
+
+
+    
     </div>
 
 </form>
@@ -132,6 +163,12 @@ $stmt->execute();
         }
 
         }
+
+        const popup = document.getElementById('popup');
+
+            function handlePopup(open) {
+                popup.classList[open ? 'add' : 'remove']('opened');
+}
     </script></div>
    </div>
     
@@ -146,6 +183,8 @@ $stmt->execute();
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="Script/script.js"></script>
     
+
+
 </body>
 </html>
             

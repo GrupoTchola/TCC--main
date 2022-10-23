@@ -170,6 +170,7 @@ body {
 }
 
 .form-box{
+  position: fixed;
   width: 500px;
   background: rgba(0, 0, 0, 0.8);
   margin: 12% auto;
@@ -320,6 +321,7 @@ h1{
 
 
 .left-login{
+  
   width: 50vw;
   height: 100hv;
   display: flex;
@@ -340,6 +342,7 @@ h1{
 }
 
 .left-login img{
+  position: fixed;
    width: 52vw;
    height: 100hv;
 }

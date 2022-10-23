@@ -17,10 +17,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   overflow-x: hidden;
+  position: fixed;
 }
 
 body {
   background: #151516;
+
 }
 
 section {
@@ -44,6 +46,15 @@ section {
   width: 100%;
   background: #aaa;
   z-index: -1;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .header .navbar a {
@@ -257,14 +268,7 @@ h1{
 }
 
 
-.left-login{
-  width: 50vw;
-  height: 100hv;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 
 input[type=text], select, textarea {
   margin-left: 45px;
@@ -281,17 +285,6 @@ input[type=text], select, textarea {
 textarea{
   background-color: black;
   color: white;
-}
-
-.right-login{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-login img{
-   width: 52vw;
-   height: 100hv;
 }
 
 

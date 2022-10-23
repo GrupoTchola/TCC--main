@@ -170,6 +170,7 @@ body {
 }
 
 .form-box{
+  position: fixed;
   width: 500px;
   background: rgba(0, 0, 0, 0.8);
   margin: 12% auto;
@@ -258,6 +259,7 @@ h1{
 
 
 .left-login{
+
   width: 50vw;
   height: 100hv;
   display: flex;
@@ -276,6 +278,7 @@ h1{
 }
 
 .left-login img{
+  position: fixed;
    width: 52vw;
    height: 100hv;
 }
@@ -308,6 +311,75 @@ h1{
 
 .new-account span:hover{
   color: white;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.popup .close-popup-button {
+  background-color: #ee404c;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .4s;
+  margin: 12px 0;
+}
+
+.popup-button:hover,
+.popup .close-popup-button:hover {
+  opacity: .8;
+}
+
+.popup-button:active,
+.popup .close-popup-button:active {
+  transform: scale(.8);
+}
+
+.popup {
+ 
+  position: absolute;
+  background-color: #333;
+  padding: 30px 50px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+  box-sizing: border-box;
+  transition: all .4s;
+  z-index: -1;
+  transform: scale(.4);
+  opacity: 0;
+}
+
+.popup.opened {
+  z-index: 999;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popup img {
+  width: 100px;
+}
+
+.popup h2.title {
+  color: #ee404c;
+}
+
+.popup p.desc {
+  color: #FFF;
 }
 
 
