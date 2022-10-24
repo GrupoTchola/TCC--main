@@ -1,11 +1,11 @@
 <?php
 require_once 'init.php';
 // pega o ID da URL
-$id = isset($_GET['email']) ? $_GET['email'] : null;
+$id = isset($_GET['Senha']) ? $_GET['Senha'] : null;
 // valida o email do usuário 
-if (empty($email))
+if (empty($Senha))
 {
-    echo "Email não informado ";
+    echo "Senha não informado ";
     exit;
 }
 // remove do banco

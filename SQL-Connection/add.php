@@ -2,25 +2,35 @@
 require_once 'init.php';
 
 //Pegando os dados do formulário
-$email = isset($_POST['email']) ? $_POST['email'] : null;
-$senha = isset($_POST['senha']) ? $_POST['senha'] : null;
+$id = isset($_POST['Nome']) ? $_POST['Nome'] : null;
+$nome = isset($_POST['Sobrenome']) ? $_POST['Sobrenome'] : null;
+$eps = isset($_POST['email']) ? $_POST['email'] : null;
+$nota = isset($_POST['Senha']) ? $_POST['Senha'] : null;
+$banner = isset($_POST['Celular']) ? $_POST['Celular'] : null;
+$banner = isset($_POST['Data_nascimento']) ? $_POST['Data_nascimento'] : null;
+$banner = isset($_POST['CPF']) ? $_POST['CPF'] : null;
 
 //validação (Evitando os dados vazios )
-if (empty($email) || empty($senha)){
+if (empty($Nome) || empty($Sobrenome) || empty($email) || empty($Senha) || empty($Celular) || empty($Data_nascimento) || empty($CPF)){
 
     echo "Volte e preencha todos os campos";
     exit; 
 }
 
-$PDO = db2_connect();
-$sql = "INSERT INTO dadosusuario(email, senha) VALUES(:email, :senha)";
+$PDO = db_connect();
+$sql = "INSERT INTO dados(Nome, Sebrenome, email, Senha, Celular, Data_nascimento, CPF) VALUES(:Nome, :Sebrenome, :email, :Senha, :Celular, :Data_nascimento, :CPF)"; 
 $stmt = $PDO->prepare($sql);
+$stmt->bindParam(':Nome', $Nome);
+$stmt->bindParam(':Sobrenome', $Sobrenome);
 $stmt->bindParam(':email', $email);
-$stmt->bindParam(':senha', $senh);
+$stmt->bindParam(':Senha', $Senha);
+$stmt->bindParam(':Celular', $Celular);
+$stmt->bindParam(':Data_nascimento', $Data_nascimento);
+$stmt->bindParam(':CPF', $CPF);
 
 if($stmt->execute()){
 
-    header('Location: index2.html');
+    header('Location: Exercise.php');
 }
 else{
     echo "Erro ao cadastrar";
